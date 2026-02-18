@@ -25,9 +25,6 @@ routes.post('/bulk-create', async (req, res) => {
     // Handle duplicate key errors
     
       return res.status(400).json({ err });
-    
-    
-    res.status(400).json({ error: err.message });
   }
 });
 

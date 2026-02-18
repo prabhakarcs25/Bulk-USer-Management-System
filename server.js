@@ -13,7 +13,9 @@ const DatabaseConn=require("./db/db")
 DatabaseConn();
 
 app.use("/api/users/",userRoutes)
-
+app.get("/",(req,res)=>{
+    res.send("Welcome")
+})
 
 app.listen(PORT,()=>{
     console.log(`Server Running or PORT 3000`)
